@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://IP_address.11:3306/big_event
+    username: your_username
+    password: your_password
+
+  data:
+    redis:
+      host: IP_address
+      port: 6379
+      database: 3         # select a database
+      password: password  # Your password
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名和下划线命名转换
